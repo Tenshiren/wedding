@@ -31,9 +31,9 @@
       <!-- Favicons-->
       <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
    </head>
-   <body id="page-top" data-spy="scroll" data-target=".navbar-custom">    
+   <body id="page-top" data-spy="scroll" data-target=".navbar-custom">   
       <!-- Preloader -->
       <div id="preloader">
          <div class="spinner">
@@ -60,7 +60,7 @@
             <!-- Collect the nav links, forms, and other content for toggling  --> 
             <div class="collapse navbar-collapse" id="navbar-brand-centered">
                <ul class="nav navbar-nav page-scroll">
-                  <li class="active"><a href="#page-top">Home</a></li>
+                  <li><a href="#page-top">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#story">Our Story</a></li>
                   <li><a href="#attendants">Attendants</a></li>
@@ -84,38 +84,18 @@
          <!-- /.container --> 
       </nav>
       <!-- /navbar ends --> 
+      <!-- Ken burns Slideshow -->
+      <div class="slideshow">
+         <!-- images path in the CSS file --> 
+         <div class="slideshow-image"></div>
+         <div class="slideshow-image"></div>
+         <div class="slideshow-image"></div>
+         <div class="slideshow-image"></div>
+      </div>
       <!-- section: intro--> 
       <section id="intro" class="container-fluid">
-         <!-- parallax ornament -->
-         <div class="ornament1 hidden-sm hidden-xs hidden-md"
-            data-100="transform:translatey(150%);"
-            data-center-center="transform:translatey(-10%);">
-            <!-- illustration path in the color template CSS -->
-         </div>
-         <!--/ornament 1-->
-         <!-- Background blurred images -->
-         <div class="photowall">
-            <div class="col-md-4 margin1">
-               <img src="img/couple1.jpg" alt="" class="rotate1 img-photo img-responsive">
-            </div>
-            <!-- /col-md-4 -->
-            <div class="col-md-4  col-md-offset-4">
-               <img src="img/couple2.jpg" alt="" class="rotate2 img-photo img-responsive">
-            </div>
-            <!-- /col-md-4 -->
-         </div>
-         <!-- Main Picture -->
-         <div class="main-picture col-md-6 col-centered"
-            data-100="margin-top:0px;transform: rotate(4deg);"
-            data-center-center="margin-top:50px;transform: rotate(-10deg);">
-            <!-- image-->
-            <img src="img/couplemain.jpg" alt="" class="img-photo img-responsive">
-         </div>
-         <!--/main picture-->
-         <div class="intro-heading col-md-12 text-center" data-0="opacity:1;"
-            data--100-start="transform:translatey(0%);"
-            data-center-bottom="transform:translatey(30%);">
-            <h1>Maria <span class="italic"> & </span> Jonas
+         <div class="intro-heading margin col-md-12 text-center">
+            <h1 class="text-light">Maria <span class="italic text-light"> & </span> Jonas
             </h1>
             <h5 class="margin1 text-ornament">Are getting married</h5>
          </div>
@@ -853,6 +833,6 @@
       <!-- Prefix free CSS -->
       <script src="js/prefixfree.js"></script>
       <!-- Open Street maps-->
-      <script src="js/map.js"></script>	
+      <script src="js/map.js"></script>		
    </body>
 </html>
