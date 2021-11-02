@@ -913,13 +913,13 @@ input:checked + .side-label:after {
 	overflow: hidden;
 	padding: 0;
 }
-.accept-form {
+.decline-form {
 	transition: all 1s ease-out;
 	opacity: 0;
 	height: 0;
 	overflow: hidden;
 }
-#yes:checked ~ .accept-form,
+#no:checked ~ .decline-form,
 #yes:checked ~ .message-comments  {
 	opacity: 1;
 	margin-top:30px;
