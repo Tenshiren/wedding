@@ -775,11 +775,48 @@ ul.polaroids li {
 }
 /* Map */
 
-#map-canvas {
+#map-canvas, #map-canvas-2 {
     max-width: 100%;
     margin-top: 30px;
     min-height: 450px;
 }
+
+/*Music*/
+.gla_music_icon {
+	position: fixed;
+	color: #eee;
+	bottom: 45px;
+	right: 50px;
+	z-index: 2;
+	font-size: 24px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+	.gla_second_step .gla_music_icon {
+		right: 100px;
+	}
+.gla_music_icon_cont {
+	position: fixed;
+	width: 400px;
+	height: 300px;
+	z-index: 2;
+	bottom: 40px;
+	right: 90px;
+	display: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+	.gla_second_step .gla_music_icon_cont {
+		right: 140px;
+	}
+.gla_music_icon_cont iframe {
+	width: 100%;
+	height: 100%;
+}
+
 /* =========================== Quote ============================ */
 
 #quote {
