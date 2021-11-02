@@ -6,35 +6,35 @@ Version: 1.0
 */
 
 "use strict";
-$(document).ready(function() {
+$(document).ready(function () {
 
-  //Countdown
-  
-    $(function(){
-			$('#countdown').countdowntimer({
-			dateAndTime : "2022/06/19 19:00:00",  // <-- edit yyyy / mm / dd / time
-			size : "lg",
-			// if the date has over 4 digits in days then add an extra [0-9] in the first field bellow
-			regexpMatchFormat: "([0-9][0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
-			regexpReplaceWith:  " <div class='count'> $1<div class='displayformat'>Days</div></div> <div class='count'> $2<div class='displayformat'>Hours</div></div> <div class='count'> $3<div class='displayformat'>Minutes</div></div> <div class='count'> $4<div class='displayformat'>Seconds</div></div>"
-			});
-	});
-	
+    //Countdown
+
+    $(function () {
+        $('#countdown').countdowntimer({
+            dateAndTime: "2022/01/08 12:00:00",  // <-- edit yyyy / mm / dd / time
+            size: "lg",
+            // if the date has over 4 digits in days then add an extra [0-9] in the first field bellow
+            regexpMatchFormat: "([0-9][0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+            regexpReplaceWith: " <div class='count'> $1<div class='displayformat'>Days</div></div> <div class='count'> $2<div class='displayformat'>Hours</div></div> <div class='count'> $3<div class='displayformat'>Minutes</div></div> <div class='count'> $4<div class='displayformat'>Seconds</div></div>"
+        });
+    });
+
     //Smooth Scroll 
 
-    $('.page-scroll a').on('click', function(event) {
+    $('.page-scroll a').on('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 2500, 'easeInOutExpo');
         event.preventDefault();
     });
-	
+
     //	Back Top Link
 
     var offset = 200;
     var duration = 500;
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > offset) {
             $('.back-to-top').fadeIn(400);
         } else {
@@ -46,11 +46,11 @@ $(document).ready(function() {
 
     $("#story-carousel").owlCarousel({
         dots: true,
-		 margin: 50,
-        loop:true,
+        margin: 50,
+        loop: true,
         autoplay: false,
         nav: true,
-		  navText: [
+        navText: [
             "<i class='fa fa-chevron-left'></i>",
             "<i class='fa fa-chevron-right'></i>"
 
@@ -59,7 +59,7 @@ $(document).ready(function() {
             1: {
                 items: 1,
             },
-			600: {
+            600: {
                 items: 2,
             },
             1000: {
@@ -68,7 +68,7 @@ $(document).ready(function() {
         }
     });
 
- 
+
     $("#owl-attendants1,#owl-attendants2").owlCarousel({
         dots: true,
         loop: true,
@@ -76,14 +76,14 @@ $(document).ready(function() {
         nav: true,
         margin: 20,
         navText: [
-                          "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-left'></i>",
             "<i class='fa fa-chevron-right'></i>"
         ],
         responsive: {
             1: {
                 items: 1,
             },
-			600: {
+            600: {
                 items: 2,
             },
             991: {
@@ -91,40 +91,40 @@ $(document).ready(function() {
             },
         }
     });
- 
+
 }); // end document ready
 
 
 // Window scroll function
 
-$(window).scroll(function() {
-	
-	   // Shrink Navbar on Scroll 	
+$(window).scroll(function () {
 
-	  if ($(document).scrollTop() > 50) {
-		$('nav').addClass('shrink');
-	  } else {
-		$('nav').removeClass('shrink');
-	  }
-	  
+    // Shrink Navbar on Scroll 	
+
+    if ($(document).scrollTop() > 50) {
+        $('nav').addClass('shrink');
+    } else {
+        $('nav').removeClass('shrink');
+    }
+
 });
 
 //On Click  function
-	$(document).on('click',function(){
-		
-		//Navbar toggle
-		$('.navbar .collapse').collapse('hide');
-		
-	})	
+$(document).on('click', function () {
+
+    //Navbar toggle
+    $('.navbar .collapse').collapse('hide');
+
+})
 
 // Window load function
 
-$(window).load(function() {
+$(window).load(function () {
 
     // Page Preloader 	
 
     $("#preloader").fadeOut("slow");
-	
+
     // Pretty Photo
 
     $("a[data-gal^='prettyPhoto']").prettyPhoto({
@@ -153,27 +153,27 @@ $(window).load(function() {
         }
 
     });
-    $(window).smartresize(function() {
+    $(window).smartresize(function () {
         $container.isotope({
             columnWidth: '.col-sm-3'
         });
     });
 
-	//initialize skrollr
+    //initialize skrollr
     skrollr.init({
         smoothScrolling: true,
-		 smoothScrollingDuration: 1000,
-		forceHeight: false			
+        smoothScrollingDuration: 1000,
+        forceHeight: false
     });
 
     // disable skrollr if using handheld device
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         skrollr.init().destroy();
     }
-			
+
     //Isotope Nav Filter
-	
-    $('.category a').on('click', function() {
+
+    $('.category a').on('click', function () {
         $('.category .active').removeClass('active');
         $(this).addClass('active');
 
@@ -188,6 +188,6 @@ $(window).load(function() {
         });
         return false;
     });
-	
+
 
 }); // end window load
