@@ -2293,7 +2293,7 @@ button.list-group-item:hover {
     
     h1 {
         font-size: 30px !important;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         line-height: 30px;
     }
     h2 {
