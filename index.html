@@ -279,6 +279,86 @@
       <!-- /container-->
    </section>
    <!-- /section ends -->
+
+
+   <!-- Section: RSVP  -->
+   <section id="rsvp">
+      <!-- parallax ornament -->
+      <div class="ornament6 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(90%);"
+         data-center-center="transform:translatex(30%);">
+         <!-- illustration path in the color template CSS -->
+      </div>
+      <!-- parallax ornament -->
+      <div class="ornament7 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(0%);"
+         data-center-center="transform:translatex(90%);">
+         <!-- illustration path in the color template CSS -->
+      </div>
+      <div class="container">
+         <div class="section-heading">
+            <h2>RSVP</h2>
+            <!-- divider -->
+            <div class="hr"></div>
+         </div>
+         <!-- /section-heading -->
+         <div class="col-lg-5">
+            <!-- image -->
+            <img src="img/rsvp.jpg" alt="" class="margin1 img-photo rotate2 img-responsive">
+         </div>
+         <!-- well -->
+         <div class="col-lg-7 well">
+            <div id="rsvp_form">
+               <div class="form-group text-center">
+                  <form action="https://formspree.io/f/xwkadlwr" method="POST">
+                     <!-- name field-->
+                     <h5>Họ tên của bạn<span class="required">*</span></h5>
+                     <input type="text" name="name" class="form-control input-field" required="">
+                     <!-- checkbox attending-->
+                     <input id="yes" type="radio" value="Đồng ý tham dự" name="attending" />
+                     <label for="yes" class="side-label">Đồng ý tham dự</label>
+                     <input id="no" type="radio" value="Từ chối tham dự" name="attending" />
+                     <label for="no" class="side-label">Rất tiếc, tôi không tham dự được!</label>
+                     <!-- if attending=no then the form bellow will show -->
+                     <div class="decline-form">
+                        <!-- guests checkbox -->
+                        <h5>Chúng mình rất lấy làm tiếc khi bạn không thể tham dự!</h5>
+                        <!-- <h6>Tuy nhiên, chúng tôi sẽ rất hạnh phúc</h6>
+                        <h6>nếu nhận được một chút tấm lòng của bạn</h6>
+                        <i class="fa fa-heart" style="font-size:24px;color:red"></i>
+                        <br>
+                        <h6>STK: 101006662937 - Đặng Hồng Phương Trang</h6>
+                        <h6>VietinBank - Chi nhánh Đồng Nai</h6>
+                        <br>
+                        <h6>STK: 0081015679045 - Đỗ Phúc Thịnh</h6>
+                        <h6>ABBank - Chi nhánh Đồng Nai</h6> -->
+
+                     </div>
+                     <!--/accept form -->
+                     <!-- if attending=yes then only the message box will show -->
+                     <div class="message-comments">
+                        <h5>Lời nhắn</h5>
+                        <textarea name="message" id="message-box" class="textarea-field form-control"
+                           rows="3"></textarea>
+                     </div>
+                     <!--/message-comments -->
+                     <div class="text-center">
+                        <button type="submit" id="submit_rsvp" value="Submit" class="btn">Gửi</button>
+                     </div>
+                     <!-- /col-md-12 -->
+                  </form>
+               </div>
+               <!-- /Form-group -->
+               <!-- Contact results -->
+               <div id="contact_results"></div>
+            </div>
+            <!-- /rsvp form-->
+         </div>
+         <!-- /well-->
+      </div>
+      <!-- /container -->
+   </section>
+   <!-- /Section ends -->
+
+
    <!-- Section: Gallery -->
    <section id="gallery" class="watercolor">
       <div class="section-heading text-center">
@@ -827,82 +907,6 @@
    <!-- /section ends -->
 
 
-   <!-- Section: RSVP  -->
-   <section id="rsvp">
-      <!-- parallax ornament -->
-      <div class="ornament6 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(90%);"
-         data-center-center="transform:translatex(30%);">
-         <!-- illustration path in the color template CSS -->
-      </div>
-      <!-- parallax ornament -->
-      <div class="ornament7 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(0%);"
-         data-center-center="transform:translatex(90%);">
-         <!-- illustration path in the color template CSS -->
-      </div>
-      <div class="container">
-         <div class="section-heading">
-            <h2>RSVP</h2>
-            <!-- divider -->
-            <div class="hr"></div>
-         </div>
-         <!-- /section-heading -->
-         <div class="col-lg-5">
-            <!-- image -->
-            <img src="img/rsvp.jpg" alt="" class="margin1 img-photo rotate2 img-responsive">
-         </div>
-         <!-- well -->
-         <div class="col-lg-7 well">
-            <div id="rsvp_form">
-               <div class="form-group text-center">
-                  <form action="https://formspree.io/f/xwkadlwr" method="POST">
-                     <!-- name field-->
-                     <h5>Họ tên của bạn<span class="required">*</span></h5>
-                     <input type="text" name="name" class="form-control input-field" required="">
-                     <!-- checkbox attending-->
-                     <input id="yes" type="radio" value="Đồng ý tham dự" name="attending" />
-                     <label for="yes" class="side-label">Đồng ý tham dự</label>
-                     <input id="no" type="radio" value="Từ chối tham dự" name="attending" />
-                     <label for="no" class="side-label">Rất tiếc, tôi không tham dự được!</label>
-                     <!-- if attending=no then the form bellow will show -->
-                     <div class="decline-form">
-                        <!-- guests checkbox -->
-                        <h5>Chúng mình rất lấy làm tiếc khi bạn không thể tham dự!</h5>
-                        <!-- <h6>Tuy nhiên, chúng tôi sẽ rất hạnh phúc</h6>
-                        <h6>nếu nhận được một chút tấm lòng của bạn</h6>
-                        <i class="fa fa-heart" style="font-size:24px;color:red"></i>
-                        <br>
-                        <h6>STK: 101006662937 - Đặng Hồng Phương Trang</h6>
-                        <h6>VietinBank - Chi nhánh Đồng Nai</h6>
-                        <br>
-                        <h6>STK: 0081015679045 - Đỗ Phúc Thịnh</h6>
-                        <h6>ABBank - Chi nhánh Đồng Nai</h6> -->
-
-                     </div>
-                     <!--/accept form -->
-                     <!-- if attending=yes then only the message box will show -->
-                     <div class="message-comments">
-                        <h5>Lời nhắn</h5>
-                        <textarea name="message" id="message-box" class="textarea-field form-control"
-                           rows="3"></textarea>
-                     </div>
-                     <!--/message-comments -->
-                     <div class="text-center">
-                        <button type="submit" id="submit_rsvp" value="Submit" class="btn">Gửi</button>
-                     </div>
-                     <!-- /col-md-12 -->
-                  </form>
-               </div>
-               <!-- /Form-group -->
-               <!-- Contact results -->
-               <div id="contact_results"></div>
-            </div>
-            <!-- /rsvp form-->
-         </div>
-         <!-- /well-->
-      </div>
-      <!-- /container -->
-   </section>
-   <!-- /Section ends -->
    <!-- Footer -->
    <footer>
       <div class="container">
