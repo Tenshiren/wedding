@@ -170,7 +170,19 @@ input[type=radio],
 
 .date-category i,
 blockquote:before
-{color: #B6BAD6;}
+{color: #6F738A;}
+/* {color: #B6BAD6;} */
+
+.box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1;
+   -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    padding: 20px 20px;
+  }
 
 .slideshow-image,
 .jumbotron,
