@@ -34,7 +34,15 @@
 .btn-radio:active,
 ul.breadcrumb,
 .side-label:after {
+    background-color: #6f738a;
+    /* background-color: #D884B9; */
+
+}
+
+.side-label:after {
     background-color: #D884B9;
+    /* background-color: #D884B9; */
+
 }
 
 .media-heading small,
@@ -92,18 +100,24 @@ label,
 .owl-next i,
 .owl-prev i,
 .sidebar-header,
-/* .back-to-top i, */
+/* .back-to-top i,
 .navbar-custom ul.nav li a:hover,
-.navbar-custom .nav>.active>a,
+.navbar-custom .nav>.active>a, */
 h1,
 .breadcrumb>.active,
 .breadcrumb a:hover,
 .breadcrumb a:focus {
-    color: #6f738a;
+    color: #D884B9;
+    /* color: #6f738a; */
 }
 
 .back-to-top i {
     color: #fff
+}
+
+.navbar-custom ul.nav li a:hover,
+.navbar-custom .nav>.active>a {
+    color: #D884B9
 }
 
 .bounce1:after {
@@ -171,7 +185,7 @@ nav.navbar.shrink,
 .dropdown-menu,
 .option-input:hover,
 footer {
-    background-color: #D884B9;
+    background-color: #d884b985;
     /* background-color: #B6BAD6; */
 }
 
@@ -180,7 +194,7 @@ select.form-control,
 input[type="checkbox"],
 input[type=radio],
 .blog-post {
-    border-color: #B6BAD6;
+    border-color: #D884B9;
 }
 
 .btn-primary:hover,
