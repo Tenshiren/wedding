@@ -42,7 +42,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-weight: 400;
-    color: #8e8d8d;
+    /* color: #8e8d8d; */
+    color: #D884B9;
     overflow-x: hidden !important;
     -webkit-font-smoothing: antialiased;
     font-family: 'Lora', serif;
