@@ -72,9 +72,9 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right page-scroll">
-               <li><a href="#rsvp">Phản hồi</a></li>
-               <!-- <li><a href="#gallery">Bộ sưu tập</a></li> -->
+               <li><a href="#gallery">Bộ sưu tập</a></li>
                <li><a href="#attendants">Phù dâu & Phù rể</a></li>
+               <li><a href="#rsvp">Phản hồi</a></li>
             </ul>
          </div>
          <!-- /.navbar-collapse -->
@@ -281,95 +281,205 @@
    <!-- /section ends -->
 
 
-   <!-- Section: RSVP  -->
-   <section id="rsvp">
-      <!-- parallax ornament -->
-      <div class="ornament6 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(90%);"
-         data-center-center="transform:translatex(30%);">
-         <!-- illustration path in the color template CSS -->
-      </div>
-      <!-- parallax ornament -->
-      <div class="ornament7 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(0%);"
-         data-center-center="transform:translatex(90%);">
-         <!-- illustration path in the color template CSS -->
-      </div>
-      <div class="container">
-         <div class="section-heading">
-            <h2>RSVP</h2>
-            <!-- divider -->
-            <div class="hr"></div>
-         </div>
-         <!-- /section-heading -->
-         <div class="col-lg-5">
-            <!-- image -->
-            <img src="img/rsvp.jpg" alt="" class="margin1 img-photo rotate2 img-responsive">
-         </div>
-         <!-- well -->
-         <div class="col-lg-7 well">
-            <div id="rsvp_form">
-               <div class="form-group text-center">
-                  <form action="https://formspree.io/f/xwkadlwr" method="POST">
-                     <!-- name field-->
-                     <h5>Họ tên của bạn<span class="required">*</span></h5>
-                     <input type="text" name="name" class="form-control input-field" required="">
-                     <!-- checkbox attending-->
-                     <input id="yes" type="radio" value="Đồng ý tham dự" name="attending" />
-                     <label for="yes" class="side-label">Đồng ý tham dự</label>
-                     <input id="no" type="radio" value="Từ chối tham dự" name="attending" />
-                     <label for="no" class="side-label">Rất tiếc, tôi không tham dự được!</label>
-                     <!-- if attending=no then the form bellow will show -->
-                     <div class="decline-form">
-                        <!-- guests checkbox -->
-                        <h5>Chúng mình rất lấy làm tiếc khi bạn không thể tham dự!</h5>
-                        <!-- <h6>Tuy nhiên, chúng tôi sẽ rất hạnh phúc</h6>
-                        <h6>nếu nhận được một chút tấm lòng của bạn</h6>
-                        <i class="fa fa-heart" style="font-size:24px;color:red"></i>
-                        <br>
-                        <h6>STK: 101006662937 - Đặng Hồng Phương Trang</h6>
-                        <h6>VietinBank - Chi nhánh Đồng Nai</h6>
-                        <br>
-                        <h6>STK: 0081015679045 - Đỗ Phúc Thịnh</h6>
-                        <h6>ABBank - Chi nhánh Đồng Nai</h6> -->
 
-                     </div>
-                     <!--/accept form -->
-                     <!-- if attending=yes then only the message box will show -->
-                     <div class="message-comments">
-                        <h5>Lời nhắn</h5>
-                        <textarea name="message" id="message-box" class="textarea-field form-control" rows="3"
-                           required=""></textarea>
-                     </div>
-                     <!--/message-comments -->
-                     <div class="text-center">
-                        <button type="submit" id="submit_rsvp" value="Submit" class="btn">Gửi</button>
-                     </div>
-                     <!-- /col-md-12 -->
-                  </form>
-               </div>
-               <!-- /Form-group -->
-               <!-- Contact results -->
-               <div id="contact_results"></div>
-            </div>
-            <!-- /rsvp form-->
-         </div>
-         <!-- /well-->
-      </div>
-      <!-- /container -->
-   </section>
-   <!-- /Section ends -->
 
 
    <!-- Section: Gallery -->
-   <!-- <section id="gallery" class="watercolor">
+   <section id="gallery" class="watercolor">
       <div class="section-heading text-center">
          <h2>Bộ sưu tập</h2>
-
+         <!-- divider -->
          <div class="hr"></div>
       </div>
-
-
-      
-   </section> -->
+      <!--/section-heading -->
+      <div class="container-fluid">
+         <!-- row fluid -->
+         <div class="row-fluid">
+            <!-- Navigation -->
+            <!-- <div class="text-center col-md-12">
+               <ul class="nav nav-pills category text-center" role="tablist" id="gallerytab">
+                  <li class="active"><a href="#" data-toggle="tab" data-filter="*">All</a>
+                  <li><a href="#" data-toggle="tab" data-filter=".our-photos">Our Photos</a></li>
+                  <li><a href="#" data-toggle="tab" data-filter=".portrait">Portrait</a></li>
+               </ul>
+            </div> -->
+            <!-- Gallery -->
+            <div class="col-md-12 gallery margin1">
+               <div id="lightbox">
+                  <!-- Image 1 -->
+                  <!-- <div class="portrait col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery1.jpg" alt="">
+                           <a href="img/gallery1.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 2 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery2.jpg" alt="">
+                           <a href="img/gallery2.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 3 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery3.jpg" alt="">
+                           <a href="img/gallery3.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 4 -->
+                  <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery4.jpg" alt="">
+                           <a href="img/gallery4.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Image 5 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery5.jpg" alt="">
+                           <a href="img/gallery5.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 6 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery6.jpg" alt="">
+                           <a href="img/gallery6.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 7 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery7.jpg" alt="">
+                           <a href="img/gallery7.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 8 -->
+                  <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery8.jpg" alt="">
+                           <a href="img/gallery8.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Image 9 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery9.jpg" alt="">
+                           <a href="img/gallery9.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 10 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery10.jpg" alt="">
+                           <a href="img/gallery10.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 11 -->
+                  <!-- <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery11.jpg" alt="">
+                           <a href="img/gallery11.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 12 -->
+                  <div class="our-photos col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery12.jpg" alt="">
+                           <a href="img/gallery12.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Image 13 -->
+                  <!-- <div class="portrait col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery13.jpg" alt="">
+                           <a href="img/gallery13.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 14 -->
+                  <!-- <div class="portrait col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery14.jpg" alt="">
+                           <a href="img/gallery14.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- Image 15 -->
+                  <!-- <div class="portrait col-lg-4 col-sm-6 col-md-6">
+                     <div class="isotope-item">
+                        <div class="gallery-thumb">
+                           <img class="img-responsive" src="img/gallery15.jpg" alt="">
+                           <a href="img/gallery15.jpg" data-gal="prettyPhoto[gallery]" title="">
+                              <span class="overlay-mask"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div> -->
+               </div>
+               <!-- /lightbox-->
+            </div>
+            <!-- /col-lg-12 -->
+         </div>
+         <!-- /row fluid -->
+      </div>
+      <!-- /container fluid-->
+   </section>
    <!-- /Section ends -->
 
    <!-- Section:attendants -->
@@ -761,6 +871,82 @@
    </section>
    <!-- /section ends -->
 
+   <!-- Section: RSVP  -->
+   <section id="rsvp">
+      <!-- parallax ornament -->
+      <div class="ornament6 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(90%);"
+         data-center-center="transform:translatex(30%);">
+         <!-- illustration path in the color template CSS -->
+      </div>
+      <!-- parallax ornament -->
+      <div class="ornament7 hidden-sm hidden-xs hidden-md" data-0="opacity:1;" data-100="transform:translatex(0%);"
+         data-center-center="transform:translatex(90%);">
+         <!-- illustration path in the color template CSS -->
+      </div>
+      <div class="container">
+         <div class="section-heading">
+            <h2>RSVP</h2>
+            <!-- divider -->
+            <div class="hr"></div>
+         </div>
+         <!-- /section-heading -->
+         <div class="col-lg-5">
+            <!-- image -->
+            <img src="img/rsvp.jpg" alt="" class="margin1 img-photo rotate2 img-responsive">
+         </div>
+         <!-- well -->
+         <div class="col-lg-7 well">
+            <div id="rsvp_form">
+               <div class="form-group text-center">
+                  <form action="https://formspree.io/f/xwkadlwr" method="POST">
+                     <!-- name field-->
+                     <h5>Họ tên của bạn<span class="required">*</span></h5>
+                     <input type="text" name="name" class="form-control input-field" required="">
+                     <!-- checkbox attending-->
+                     <input id="yes" type="radio" value="Đồng ý tham dự" name="attending" />
+                     <label for="yes" class="side-label">Đồng ý tham dự</label>
+                     <input id="no" type="radio" value="Từ chối tham dự" name="attending" />
+                     <label for="no" class="side-label">Rất tiếc, tôi không tham dự được!</label>
+                     <!-- if attending=no then the form bellow will show -->
+                     <div class="decline-form">
+                        <!-- guests checkbox -->
+                        <h5>Chúng mình rất lấy làm tiếc khi bạn không thể tham dự!</h5>
+                        <!-- <h6>Tuy nhiên, chúng tôi sẽ rất hạnh phúc</h6>
+                           <h6>nếu nhận được một chút tấm lòng của bạn</h6>
+                           <i class="fa fa-heart" style="font-size:24px;color:red"></i>
+                           <br>
+                           <h6>STK: 101006662937 - Đặng Hồng Phương Trang</h6>
+                           <h6>VietinBank - Chi nhánh Đồng Nai</h6>
+                           <br>
+                           <h6>STK: 0081015679045 - Đỗ Phúc Thịnh</h6>
+                           <h6>ABBank - Chi nhánh Đồng Nai</h6> -->
+
+                     </div>
+                     <!--/accept form -->
+                     <!-- if attending=yes then only the message box will show -->
+                     <div class="message-comments">
+                        <h5>Lời nhắn</h5>
+                        <textarea name="message" id="message-box" class="textarea-field form-control" rows="3"
+                           required=""></textarea>
+                     </div>
+                     <!--/message-comments -->
+                     <div class="text-center">
+                        <button type="submit" id="submit_rsvp" value="Submit" class="btn">Gửi</button>
+                     </div>
+                     <!-- /col-md-12 -->
+                  </form>
+               </div>
+               <!-- /Form-group -->
+               <!-- Contact results -->
+               <div id="contact_results"></div>
+            </div>
+            <!-- /rsvp form-->
+         </div>
+         <!-- /well-->
+      </div>
+      <!-- /container -->
+   </section>
+   <!-- /Section ends -->
 
    <!-- Footer -->
    <footer>
